@@ -76,7 +76,7 @@ def compute_cost(X, y, w, b):
     Returns
       cost (scalar)    : cost
     """
-    m = X.shape[0]
+    m = X.shape[0]   # shape gives [nrows, ncols]
     cost = 0.0
     for i in range(m):
         f_wb_i = np.dot(X[i],w) + b           #(n,)(n,)=scalar

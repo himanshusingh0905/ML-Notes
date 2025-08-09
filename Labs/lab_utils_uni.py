@@ -70,8 +70,8 @@ def plt_intuition(x_train, y_train):
     w_range = np.array([200-200,200+200])
     tmp_b = 100
 
-    w_array = np.arange(*w_range, 5)
-    cost = np.zeros_like(w_array)
+    w_array = np.arange(*w_range, 5)     # It's an array with length = 80,   [ start = 0, end = 395 ]
+    cost = np.zeros_like(w_array)        # Similarly it's the array containg all zeroes, length = 80
     for i in range(len(w_array)):
         tmp_w = w_array[i]
         cost[i] = compute_cost(x_train, y_train, tmp_w, tmp_b)
